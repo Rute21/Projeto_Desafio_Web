@@ -41,11 +41,12 @@ console.log(num)
 console.log("valor de num" + num)
 console.log('valor de num2', num3)
 console.log(`valor de num2 ${num2}`)
-console.log('A soma dos números' + (15 + 8))
-console.log('A soma dos números', 15 + 8)
+
+console.log(`A soma dos números` + (15 + 8))
+console.log(`A soma dos números`, 15 + 8)
 console.log(`A soma dos números ${15+8}`)
-console.log('A soma dos números' = num + num2)
-console.log('A soma dos números',num2 + 8)
+console.log(`A soma dos números` + num + num2)
+console.log(`A soma dos números`,num2 + 8)
 console.log(`A soma dos números ${num - num2}`)
 
 
@@ -57,8 +58,8 @@ console.log(`A soma dos números ${num - num2}`)
      / DIVISÃO
 */
 
-console.log('SOMA DAS VARIÁVEIS' , num + num2)
-console.log('SUBTRAÇÃO DAS VARIÁVEIS', num3 - num)
+console.log('A SOMA DAS VARIÁVEIS' , num + num2)
+console.log('A SUBTRAÇÃO DAS VARIÁVEIS', num3 - num)
 console.log('MULTIPLICAÇÃO', num5 * 2)
 console.log('DIVISÃO DOS VALORES', num2 / 5)
 console.log('RESTO DA DIVISÃO' , num2 % 2)
@@ -66,12 +67,12 @@ console.log(`RESTO DA DIVISÃO ${num3 % 3}`)
 
 //OPERADORES RELACIONAIS
 /*
-     ==IGUAL
+     == IGUAL
      > MAIOR
      < MENOR
-     >=MAIOR IGUAL
-     <=MENOR IGUAL
-     !=DIFERENTE
+     >= MAIOR IGUAL
+     <= MENOR IGUAL
+     != DIFERENTE
 */     
 
 //OPERADORES LÓGICOS
@@ -93,10 +94,10 @@ console.log(`TESTE LÓGICO`,(10 > 5) || (15 < 8))
     let idade = 25 
 
     if(idade >= 18){
-        console.log('Maior de idade')
+        console.log(`Maior de idade`)
 
     }else{
-        console.log('Menor de idade')
+        console.log(`Menor de idade`)
     }
 /* 
     * RENOVAÇÃO DE CNH
@@ -106,6 +107,7 @@ console.log(`TESTE LÓGICO`,(10 > 5) || (15 < 8))
       70 ACIMA - 3 ANOS 
 */       
 //ANINHAMENTO DE IF
+
 if(idade < 18){
     console.log (`COM A IDADE DE ${idade}, NÃO É PERMITIDO POSSUIR CNH`)
 }else if(idade < 50){
