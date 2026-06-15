@@ -15,8 +15,9 @@ let n3 =parseFloat(objFormDados.get('num3'))
 
 let media = (n1 + n2 + n3) / 3
 
-divResultado.innerHTML = `A MÉDIA DOS NÚMEROS DIGITADOS É:
-  ${media.toFixed(2).replace('.',',')}`
+divResultado.innerHTML = `A MÉDIA DOS NÚMEROS É:
+${media.toFixed(2).replace('.',',')}`
+ 
 
 formDados.requestFullscreen()
 
