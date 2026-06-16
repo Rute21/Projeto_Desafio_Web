@@ -1,8 +1,8 @@
-//PEGANDO ELEMENTOS DO DOM
+
 const formDados = document.querySelector('#classificacao')
 const divResultado = document.querySelector('#div-dados')
 
-//CAPTURANDO O EVENTO SUBMIT DO FORMULÁRIO
+
 formDados.addEventListener('submit' ,(evt) =>{
    evt.preventDefault()
 
@@ -13,28 +13,24 @@ let ladoB= parseFloat(objFormDados.get('ladoB'))
 let ladoC =parseFloat(objFormDados.get('ladoC'))
 
 
-let resultado = document.getElementById("resultado");
+let resultado = "";
 
-if (ladoA+ b > c && ladoA + c > b && b + c > ladoA) {
-
-   if (ladoA ===  && ladoB === ladoC) {
-       resultado.innerText = "Triângulo Equilátero";
-   } 
-   else if (ladoA ===  ladoB || ladoA === ladoC ||  ladoB === ladoC) {
-       resultado.innerText = "Triângulo Isósceles";
-   } 
-   else {
-       resultado.innerText = "Triângulo Escaleno";
-   }
-
+if (ladoA == ladoB && ladoB == ladoC) {
+    resultado = "Triângulo Equilátero";
+} else if (
+    ladoA == ladoB ||
+    ladoA == ladoC ||
+    ladoB == ladoC 
+ ) {
+    resultado= "Triângulo Isósceles";
 } else {
-   resultado.innerText = "Não forma um triângulo válido";
+    resultado= "Triângulo Escaleno";
 }
-}
-
-divResultado.innerHTML = 
 
 
-formDados.requestFullscreen()
+divResultado.innerHTML = `<h3>${resultado}</h3>`
+
+
+
 
 })
